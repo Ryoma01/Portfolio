@@ -1,0 +1,149 @@
+.footerFixed{
+    min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+    position: relative;/* ←相対位置 */
+    padding-bottom: 60px; /* ←フッターの高さを指定 */
+    box-sizing: border-box;
+    /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+}
+#header {
+    padding-top: 0px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited ,a:active{
+    color: black;
+}
+a:hover {
+    color: rgb(36, 104, 147);
+}
+#titleber {
+    padding: 1px;
+    margin: 0 auto;
+    background-image: url(Geometric_object_scene1.jpg);
+    text-align: center;
+}
+
+#titleber a {
+    font-family:HiraMinProN-W6;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh);
+    background: url(windows11_wallpaper_pic_white_edited.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.nav_block {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: sticky;
+    padding: 1px;
+    margin: 0px auto;
+    width: 100%;
+    height: 35px;
+}
+
+.nav_block li a {
+    line-height: 35px;
+    text-decoration: none;
+}
+
+.nav_block li {
+    width: 25%;
+    text-align: center;
+    float: left;
+    list-style: none;
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.5);
+    
+    top: 20%;
+    display: inline-block;
+    padding: 20px;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main_b{
+    text-align: left;
+}
+#footer {
+    bottom: 0;
+    position: absolute;/* ←絶対位置 */
+    width: 100%;
+    height: 85px;
+    background-color: #EDEDEB;
+    text-align: center;
+}
+.top{
+    top: 30px;
+}
+.footer_html {
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.footer_css{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.footer_css2{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+address{
+    float: right;
+    margin-right: 10px;
+    margin-top: 60px;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.items:after{
+    content:"";
+    display:block;
+    width: 32%;
+    height:0;
+}
+.item {
+    box-sizing: border-box;
+    border:2px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    width:32%;
+}
+
+.img_wrap{
+    border: 1px solid #ddd;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .img_wrap img{
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .img_wrap:hover img{
+    opacity: 0.6;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+  }
