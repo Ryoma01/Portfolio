@@ -121,7 +121,14 @@ h1 {
 
 
 .link{
-    text-align: center;
+    text-align: center;         /* 子要素を左右中央揃えにする */
+    padding:  20px;             /* 余白指定 */
+
+}
+.inline-block_test {
+    display: inline-block;      /* インラインブロック要素にする */
+
+    padding:  20px;             /* 余白指定 */
 }
 
 #footer {
